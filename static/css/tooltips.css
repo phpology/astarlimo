@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+/* trigger button */
+#menu1{
+}
+/* tooltip styling */
+.tooltip1 {
+	display:none;
+	background-image: url(images/sce/rollmenu.png);
+	background-repeat: no-repeat;
+	width: 152px;
+	height: 116px;
+	float: left;
+	padding-left: 26px;
+	padding-right: 28px;
+	padding-top: 43px;
+	padding-bottom: 28px;
+	z-index: 10000;
+}
+.tooltip1 ul{
+	list-style: none;
+	background: none;
+	background-image: none;
+	margin: 0; padding: 0;
+	width: 152px;
+	float: left;
+	text-align: center;
+}
+.tooltip1 ul li{
+	list-style: none;
+	background: none;
+	background-image: none;
+	margin: 0; padding: 0;
+	font-family: "HelveticaCondensedMedium";
+	line-height: 18px;
+	height: auto;
+	padding-bottom: 5px;
+	color: #FFF;
+}
+.tooltip1 li a {
+	background: none;
+	background-image: none;
+	text-indent: 0; /*--Reset text indent--*/
+	height: auto;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #FFF;
+	font-size: 12px;
+	width: 152px;
+	opacity: 1;
+}
+.tooltip1 li a:hover {color: #CCC;background: none;opacity: 1;}

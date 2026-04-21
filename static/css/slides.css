@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* everything is constructed with a single background image */
+
+/* root element for tabs */
+#flowtabs {
+	
+	/* dimensions */
+	width:40px;
+	height: auto !important;
+	float: right;
+	margin:0 !important; 
+	padding:0;
+	padding-right: 10px;
+}
+#flowtabs ul{
+	width: 40px;
+	height: 9px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-image: none;
+	float: right;
+}
+/* single tab */
+#flowtabs li { 
+	float:left;
+	display: block;
+	margin:0; 
+	padding:0; 
+	list-style-type:none;
+	list-style: none;
+	list-style-image: none;
+}
+/* a- tag inside single tab */
+#flowtabs a {
+	display: block;
+	float: left;
+	text-indent: -3000px;
+}
+#flowtabs #t1 {
+	width: 12px;
+	height: 9px;
+	display: block;
+	background-image: url(images/sce/bannerbutts.png);
+	background-position: 0px 0px;
+}
+#flowtabs #t1:hover {
+	background-position: 0px -9px;
+}
+#flowtabs #t1.current {
+	background-position: 0px -9px;
+}
+#flowtabs #t2 {
+	width: 16px;
+	height: 9px;
+	display: block;
+	background-image: url(images/sce/bannerbutts.png);
+	background-position: -12px 0px;
+}
+#flowtabs #t2:hover {
+	background-position: -12px -9px;
+}
+#flowtabs #t2.current {
+	background-position: -12px -9px;
+}
+#flowtabs #t3 {
+	width: 12px;
+	height: 9px;
+	display: block;
+	background-image: url(images/sce/bannerbutts.png);
+	background-position: -28px 0px;
+}
+#flowtabs #t3:hover {
+	background-position: -28px -9px;
+}
+#flowtabs #t3.current {
+	background-position: -28px -9px;
+}
+#flowtabs a:hover {}
+#flowtabs a.current	{}
+#flowpanes {	
+	width:1000px;
+	height:412px;
+}
+/* single pane */
+#flowpanes div {
+	display:none;	
+}
+#flowpanes .items div {
+	width:1000px;
+	height:412px;
+	float: left;
+}
+#flowpanes .items div .slide1{
+	width:1000px;
+	height:412px;
+	float: left;
+}
+#flowpanes .items div .slide1 a{
+	width:1000px;
+	height:412px;
+	display: block;
+	background-image: url(images/homebanner/1.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity:1;
+	-webkit-transition:opacity .25s ease-in;
+	-moz-transition:opacity .25s ease-in;
+	-o-transition:opacity .25s ease-in;
+	transition:opacity .25s ease-in;
+}
+#flowpanes .items div .slide1 a:hover{
+	opacity:.75;
+	background-position: 0px -412px;
+}
+#flowpanes .items div .slide2{
+	width:1000px;
+	height:412px;
+	float: left;
+}
+#flowpanes .items div .slide2 a{
+	width:1000px;
+	height:412px;
+	display: block;
+	background-image: url(images/homebanner/2.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity:1;
+	-webkit-transition:opacity .25s ease-in;
+	-moz-transition:opacity .25s ease-in;
+	-o-transition:opacity .25s ease-in;
+	transition:opacity .25s ease-in;
+}
+#flowpanes .items div .slide2 a:hover{
+	opacity:.75;
+	background-position: 0px -412px;
+}
+#flowpanes .items div .slide3{
+	width:1000px;
+	height:412px;
+	float: left;
+}
+#flowpanes .items div .slide3 a{
+	width:1000px;
+	height:412px;
+	display: block;
+	background-image: url(images/homebanner/3.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	opacity:1;
+	-webkit-transition:opacity .25s ease-in;
+	-moz-transition:opacity .25s ease-in;
+	-o-transition:opacity .25s ease-in;
+	transition:opacity .25s ease-in;
+}
+#flowpanes .items div .slide3 a:hover{
+	opacity:.75;
+	background-position: 0px -412px;
+}

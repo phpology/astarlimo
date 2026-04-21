@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>A Star Limousine | Tuk Tuk | Luxury Cars | Horse Drawn Carriage | Rickshaw - Est.1990</title>
+<meta name="title" content="A Star Limousine | Tuk Tuk | Luxury Cars | Horse Drawn Carriage | Rickshaw - Est.1990">
+<meta name="description" content="Make your special day even special, Why not hire a Classic or Vintage Rolls Royce to add to you day or if you are looking for a more prestige car why not hire a New Phantom or Bentley. Or like Cinderella make it even special and Hire a Horse and Carriage."> 
+<meta itemprop="name" content="A Star Limousine | Tuk Tuk | Luxury Cars | Horse Drawn Carriage | Rickshaw - Est.1990">
+<meta itemprop="description" content="Make your special day even special, Why not hire a Classic or Vintage Rolls Royce to add to you day or if you are looking for a more prestige car why not hire a New Phantom or Bentley. Or like Cinderella make it even special and Hire a Horse and Carriage.">
+<META HTTP-EQUIV="CHARSET" CONTENT="ISO-8859-1">
+<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="English">
+<META HTTP-EQUIV="VW96.OBJECT TYPE" CONTENT="Homepage">
+<META NAME="RATING" CONTENT="General">
+<META NAME="ROBOTS" CONTENT="index,follow">
+<META NAME="REVISIT-AFTER" CONTENT="7 days">
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/global.css" rel="stylesheet" type="text/css" />
+<style type="text/css" media="screen and (min-width: 1200px)">
+<!--
+@import url("../css/global.css");
+-->
+</style>
+<!--[if IE]><link rel="stylesheet" type="text/css" href="../css/global.css"  media="screen" /><![endif]-->
+<link href="../css/global.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width:1200px)" />
+<meta name="viewport" content="width = 1200" />
+<link href="../css/global.css" rel="stylesheet" type="text/css" media="handheld" />
+<link href="../css/tooltips.css" rel="stylesheet" type="text/css" />
+<link href="../css/panel.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../css/slides.css" type="text/css" />
+<link rel="stylesheet" href="../css/nivo-slider.css" type="text/css" media="screen" />
+<script src="../js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+<script src="../js/slide.js" type="text/javascript"></script>
+<script>
+$(document).ready(function() {
+		
+	// enable tooltip for "download" element. use the "slide" effect
+	$("#menu1").tooltip({ 
+					   // tweak the position
+   offset: [10, 0],
+
+   // use the "slide" effect
+   effect: 'slide',
+   position: 'bottom center'
+					  })
+});
+</script>
+<style>
+/* override the root element to enable scrolling */
+#flowpanes {
+		position:relative;
+		overflow:hidden;
+		clear:both;
+}
+/* override single pane */
+#flowpanes div {
+		float:left;
+		display:block;
+		width:1000px;
+		height: 412px;
+}
+/* our additional wrapper element for the items */
+#flowpanes .items {
+		width:20000em;
+		position:absolute;
+		clear:both;
+		margin:0;
+		padding:0;
+}
+#flowpanes .less, #flowpanes .less a {
+		color:#999 !important;
+		font-size:11px;
+}
+</style>
+</head>
+
+<body>
+<div class="displaynone">
+<p>A Star Limousine | Luxury Cars | Horse Drawn Carriage | Rickshaw - Est.1990</p>
+<p>07956 39 28 01 / 07890 39 68 75</p>
+<p><a href="mailto:infoastarlimousine.co.uk">info@astarlimousine.co.uk</a></p>
+<ul>
+<li><a tabIndex=1 href="#topnav">Skip to Main Navigation</a></li>
+<li><a tabIndex=2 href="#contact">Skip to Contact Numbers</a></li>
+<li><a tabIndex=3 href="#footer">Skip to Bottom Navigation</a></li>
+<li><a tabIndex=4 href="#bodycontent">Skip to Content</a></li>
+</ul>
+</div>
+<!--div coding for template starts here-->
+<div class="maincontainer">
+<div class="maincontainerinside">
+<div class="line1">
+<div class="line1left">
+<div class="logo"><a href="../index.php"></a></div>
+</div>
+<div class="line1right">
+<div class="line1rightline1">
+<div id="contact">
+<div class="displaynone">Contact Numbers</div>
+<ul>
+<li>07956 39 28 01</li>
+<li>/</li>
+<li>07890 39 68 75</li>
+</ul>
+</div>
+</div>
+<div class="line1rightline2">
+<div class="line1rightline2inside">
+<div class="navbox1">
+<div id="topnav">
+<div class="displaynone">Navigation</div>
+<ul>
+<li><a href="../index.php" class="link1">Home</a></li>
+<li><a href="../about_a_star_limousine.php" class="link2">About Us</a></li>
+</ul>
+</div>
+</div>
+<div class="navbox2">
+<a href="../our_vehicles_a_star_limousine.php" id="menu1" class="link3">Our Vehicles</a>
+<div class="tooltip1">
+<ul>
+<li><a href="../luxury_cars_a_star_limousine.php">Luxury Cars</a></li>
+<li><a href="../horse_drawn_carriage_a_star_limousine.php">Horse Drawn Carriage</a></li>
+<li><a href="../rickshaw_a_star_limousine.php">Rickshaw</a></li>
+</ul>
+</div>
+</div>
+<div class="navbox3">
+<div id="topnav">
+<ul>
+<li><a href="../links_a_star_limousine.php" class="link4">Links</a></li>
+<li><a href="../contact_a_star_limousine.php" class="link5">Contact Us</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="line2">
+<div class="line2inside"></div>
+</div>
+<div class="line3">
+<div id="bodycontent">
+<div class="displaynone">Content</div>
+<!-- TemplateBeginEditable name="Content" -->
+
+<!-- TemplateEndEditable -->
+</div>
+</div>
+<div class="line4">
+<div class="line4inside">
+<div class="line4insideleft">
+<div id="footer">
+<div class="displaynone">Footer</div>
+<ul>
+<li>&copy; All rights reserved 2012 A Star Limousine</li>
+</ul>
+</div>
+</div>
+<div class="line4insideright">
+<div class="footerbox1">
+<div class="splogo"><a href="http://www.spgraphic-design.com" target="_blank"></a></div>
+</div>
+<div class="footerbox2">
+<div class="facebooklogo"><a href="#"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--div coding for template end here-->
+<script>
+// wait until document is fully scriptable
+$(function() {
+
+	// select #flowplanes and make it scrollable. use circular and navigator plugins
+	$("#flowpanes").scrollable({easing: 'custom', speed: 700, circular: true, mousewheel: false}).autoscroll({interval: 10000}).navigator({
+
+		// select #flowtabs to be used as navigator
+		navi: "#flowtabs",
+
+		// select A tags inside the navigator to work as items (not direct children)
+		naviItem: 'a',
+
+		// assign "current" class name for the active A tag inside navigator
+		activeClass: 'current',
+
+		// make browser's back button work
+		history: true
+	});
+	// custom easing called "custom"
+$.easing.custom = function (x, t, b, c, d) {
+	var s = 1.70158; 
+	if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+	return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+}
+});
+</script>
+<script type="text/javascript"> 
+
+  var _gaq = _gaq || []; 
+  _gaq.push(['_setAccount', 'UA-32068772-1']); 
+  _gaq.push(['_trackPageview']); 
+
+  (function() { 
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+  })(); 
+
+</script> 
+</body>
+</html>

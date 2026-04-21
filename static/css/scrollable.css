@@ -1,0 +1,165 @@
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 448px;
+	height: 392px;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+.items div {
+	float:left;
+	width: 448px;
+	height: 392px;
+}
+.items div.pline1 {
+	width: 448px;
+	height: 89px;
+	float: left;
+	padding-bottom: 12px;
+}
+.items div.pline1 .box1{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline1 .box2{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline1 .box3{
+	width: 103px;
+	height: 89px;
+	float: left;
+}
+.items div.pline1 .box4{
+	width: 103px;
+	height: 89px;
+	float: right;
+}
+.items div.pline2 {
+	width: 448px;
+	height: 89px;
+	float: left;
+	padding-bottom: 12px;
+}
+.items div.pline2 .box1{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline2 .box2{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline2 .box3{
+	width: 103px;
+	height: 89px;
+	float: left;
+}
+.items div.pline2 .box4{
+	width: 103px;
+	height: 89px;
+	float: right;
+}
+.items div.pline3 {
+	width: 448px;
+	height: 89px;
+	float: left;
+	padding-bottom: 12px;
+}
+.items div.pline3 .box1{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline3 .box2{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline3 .box3{
+	width: 103px;
+	height: 89px;
+	float: left;
+}
+.items div.pline3 .box4{
+	width: 103px;
+	height: 89px;
+	float: right;
+}
+.items div.pline4 {
+	width: 448px;
+	height: 89px;
+	float: left;
+}
+.items div.pline4 .box1{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline4 .box2{
+	width: 103px;
+	height: 89px;
+	float: left;
+	padding-right: 12px;
+}
+.items div.pline4 .box3{
+	width: 103px;
+	height: 89px;
+	float: left;
+}
+.items div.pline4 .box4{
+	width: 103px;
+	height: 89px;
+	float: right;
+}
+/* active item */
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	font-size: 11px;
+	color: #999;
+	cursor:pointer;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+a:hover.browse {
+	text-decoration: none;
+	color: #CCC;
+}
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 	

@@ -1,0 +1,74 @@
+/* misc */
+#store_locator { width: 100%; margin: 0 auto; margin-top: 10px; height: 84%;}
+#store_locator * { box-sizing: border-box; }
+#store_locator a { color: #d55; cursor: pointer; }
+#store_locator .cl { height: 1em; clear: both; }
+#store_locator input[type=text] { width: 92px; }
+
+/* sections */
+#store_locator > *:not(.cl) { background: #fff; box-sizing: border-box; border: solid 1px #d2d2d2; }
+
+/* options and places list... */
+#store_locator .options-and-list { width: calc(25% - 1.7em); margin: 0 1.7em 0 0; float: left; padding: 1.7em; height: 98% }
+#store_locator.show_dirs.accommodate-all .options-and-list { width: calc(30% - 1.7em); }
+#store_locator.show_dirs.hide-places .options-and-list { width: 50px; padding: 0; }
+#store_locator .options-and-list > a { display: none !important; transforms: rotate(-90deg); font-size: 2.5em; text-align: center; transform: rotate(180deg); line-height: 1.75em; }
+
+/* ...options */
+#store_locator form > div:not(.cl) { float: left; width: 50%; }
+#store_locator fieldset { border: none; padding: 0; margin-bottom: .65em; }
+#store_locator form fieldset > *:first-child { margin-top: 0; }
+#store_locator form p { display: none; font-style: italic; color: #888; margin-top: 0; }
+#store_locator form label { float: left; width: 150px; }
+#store_locator input[type=text], #store_locator select, #store_locator button { padding: .4em .6em; border: solid 1px #bbb; height: 34px; }
+#store_locator select { margin-top: -.3em; }
+#store_locator input[type=radio]:not(:first-of-type) { margin-left: 1em; }
+#store_locator form button { cursor: pointer; }
+#store_locator form.loading button::before { content: 'Loading...'; }
+
+/* places list */
+#store_locator .options-and-list > *:not(form) { display: none; }
+#store_locator.show_dirs.hide-places .options-and-list > * { display: none !important; }
+#store_locator.show_dirs.hide-places .options-and-list > a { display: block !important; }
+#store_locator.show_dirs.hide-places .options-and-list > a:hover { color: white; background: #d55; }
+#store_locator .options-and-list .found-0 { color: #d55; }
+#store_locator .options-and-list > p:not(.found-0) { color: #3FBF3F; }
+#store_locator .options-and-list > p strong { color: inherit; }
+#store_locator .options-and-list ul { margin-top: 0; padding: 0; list-style: none; overflow: auto; height: 70%;}
+#store_locator .options-and-list li { padding-top: 1em; border-top: solid 1px #d5d5d5; margin-top: 1em; position: relative; }
+#store_locator .options-and-list li p { margin: 0; }
+
+/* directions container... */
+#store_locator .dirs { width: calc(40% - 1.7em); float: left; margin: 0 1.7em 0 0; padding: 1.7em; display: none; position: relative; }
+#store_locator.accommodate-all .dirs { width: calc(30% - 1.7em); }
+#store_locator .dirs > a { position: absolute; top: .8em; right: 1.3em; transform: scale(1.35); }
+
+/* ...directions options */
+#store_locator .dirs ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+#store_locator .dirs li { display: inline-block; width: calc(32px + 1em); height: calc(32px + 1em); background: center no-repeat #eee; padding: .5em; border: solid 1px #d2d2d2; border-left: none; cursor: pointer; }
+#store_locator .dirs li:first-child { border-left: solid 1px #d2d2d2; }
+#store_locator .dirs .on { background-color: transparent; border-bottom: solid 1px transparent; cursor: default; }
+#sl_leave { text-align: center; margin-bottom: 1em; }
+#store_locator .dirs label { width: auto; }
+#store_locator .dirs label:first-of-type { margin-right: .65em; }
+#store_locator .dirs input[type=radio] { margin: 2px .5em 0 0; }
+#sl_leave div { display: none; }
+#store_locator .dirs select { margin: -.3em .65em 0 .65em; }
+
+/* ...directions steps (overrides to default Google directions styles) */
+#store_locator .adp-placemark { border: none; background: #CBEDAD; padding: .2em 0 0 1em; }
+#store_locator [data-leg-index='1'] .adp-placemark { background: #F4B2AD ; }
+#store_locator .adp-directions td { border-color: #d2d2d2; padding: .5em 0; }
+#store_locator .adp-directions tr:hover td { background: #F3F7CD; }
+#store_locator .adp-directions td:first-child { padding-right: .5em; }
+#store_locator .adp-directions td:last-child { text-align: right; }
+#store_locator .adp-summary { font-weight: bold; margin: .85em 0; }
+
+/* map container */
+#store_locator .map { height: 98%; display: none; width: 75%; float: left; }
+#store_locator.show_dirs.accommodate-all .map { width: 40%; }
+#store_locator.show_dirs.hide-places .map { width: calc(60% - 50px - 1.7em); }
+
+#store_locator .sector, #store_locator .type {
+	color: #2562ed;
+}

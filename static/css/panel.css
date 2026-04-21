@@ -1,0 +1,286 @@
+/* Panel Tab/button */
+.tab {
+	height: 29px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+.tab ul.opcl {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: left;
+  	height: 29px;
+	width: 97px;
+	margin: 0px;
+	padding: 0px;
+	background: none;
+}
+.tab ul.opcl li {
+  	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+	display: block;
+	float: left;
+	height: 29px;
+	background: none;
+}
+.tab a.open, .tab a.close  {
+	height: 29px;
+	cursor: pointer;
+	display: block;
+	width: 97px;
+	position: relative;
+	text-indent: -3000px;
+}
+
+.tab a.open {
+	background: url(images/sce/panelbutt.png) no-repeat;
+	background-position: 0px 0px;
+}
+.tab a.close {
+	background: url(images/sce/panelbutt.png) no-repeat;
+	background-position: 0px -29px;
+}
+.tab a:hover.open {
+	background: url(images/sce/panelbutt.png) no-repeat;
+	background-position: 00px 0px;
+}
+.tab a:hover.close {
+	background: url(images/sce/panelbutt.png) no-repeat;
+	background-position: 0px -29px;
+}
+/* sliding panel */
+#toppanel {
+   position: fixed;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+   top: 0;
+    width: 100%;
+    z-index: 999;
+	margin: 0px;
+	padding: 0px;
+}
+#toppanelpadding {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+#toppanelpadding2 {
+	width: 100%;
+	height: 37px;
+	float: left;
+	background-image: url(images/sce/panelbg.png);
+	background-repeat: repeat-x;
+	background-position: 0px -1px;
+}
+#toppanel .inside{
+	width:980px;
+	height: auto;
+	margin: 0 auto 0;
+}
+#panel {
+	width: 100%;
+	height: auto;
+	color: #999999;
+	overflow: hidden;
+	position: relative;
+	z-index: 999;
+	display: none;
+	background-color: #FFF;
+}
+#panel .inside{
+	width:980px;
+	height: 347px;
+	margin: 0 auto 0;
+}
+#panel .insideinside{
+	width:980px;
+	height: 287px;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#panel .insideinsideleft{
+	width:228px;
+	height: 287px;
+	float: left;
+	padding-right: 29px;
+	border-right: 1px solid #CCC;
+}
+#panel .insideinsideleftline1{
+	width:228px;
+	height: 227px;
+	float: left;
+	background-image: url(images/sce/paneltxt.jpg);
+	background-repeat: no-repeat;
+}
+#panel .insideinsideleftline1 p{
+	color: #666;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 18px;
+	padding-top: 70px;
+	text-align: justify;
+}
+#panel .insideinsideleftline2{
+	width:228px;
+	height: auto;
+	float: left;
+}
+#panel .insideinsideleftline2 p{
+	color: #999;
+	font-size: 10px;
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+}
+#panel .insideinsideright{
+	width:692px;
+	height: 287px;
+	float: right;
+}
+#panel .insideinsideright .panelform{
+	width:692px;
+	height: 287px;
+	float: left;
+}
+#panel .insideinsideright .panelformleft{
+	width:336px;
+	height: 287px;
+	float: left;
+}
+#panel .insideinsideright .panelformleftline1{
+	width:336px;
+	height: 43px;
+	float: left;
+	background-image: url(images/sce/panelfield1.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+}
+#panel .insideinsideright .panelformleftline1 input{
+	margin: 0px;
+	padding: 10px;
+	background: 0px;
+	border: 0px;
+	width:316px;
+	height: 23px;
+	line-height: 23px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+#panel .insideinsideright .panelformleftline2{
+	width:336px;
+	height: 43px;
+	float: left;
+	background-image: url(images/sce/panelfield2.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+}
+#panel .insideinsideright .panelformleftline2 input{
+	margin: 0px;
+	padding: 10px;
+	background: 0px;
+	border: 0px;
+	width:316px;
+	height: 23px;
+	line-height: 23px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+#panel .insideinsideright .panelformleftline3{
+	width:336px;
+	height: 43px;
+	float: left;
+	background-image: url(images/sce/panelfield3.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+}
+#panel .insideinsideright .panelformleftline3 input{
+	margin: 0px;
+	padding: 10px;
+	background: 0px;
+	border: 0px;
+	width:316px;
+	height: 23px;
+	line-height: 23px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+#panel .insideinsideright .panelformleftline4{
+	width:336px;
+	height: 43px;
+	float: left;
+	padding-bottom: 5px;
+}
+#panel .insideinsideright .panelformleftline4 select{
+	width:336px;
+	height: 43px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 14px;
+	color: #333;
+	font-family: Helvetica, Arial, sans-serif;
+}
+#panel .insideinsideright .panelformleftline5{
+	width:336px;
+	height: 43px;
+	float: left;
+	background-image: url(images/sce/panelfield4.jpg);
+	background-repeat: no-repeat;
+}
+#panel .insideinsideright .panelformleftline5 input{
+	margin: 0px;
+	padding: 10px;
+	background: 0px;
+	border: 0px;
+	width:316px;
+	height: 23px;
+	line-height: 23px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+#panel .insideinsideright .panelformright{
+	width:336px;
+	height: 287px;
+	float: right;
+}
+#panel .insideinsideright .panelformrightline1{
+	width:336px;
+	height: 235px;
+	float: left;
+	background-image: url(images/sce/panelfield5.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+}
+#panel .insideinsideright .panelformrightline1 textarea{
+	margin: 0px;
+	padding: 10px;
+	background: 0px;
+	border: 0px;
+	width:316px;
+	height:190px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	padding-top: 35px;
+}
+#panel .insideinsideright .panelformrightline2{
+	width:336px;
+	height: 37px;
+	float: left;
+	text-align: right;
+}
+#panel .insideinsideright .panelformrightline2 button{
+	margin: 0px;
+	padding: 0px;
+	background: none;
+	border: 0px;
+	cursor: default;
+}
+/* BUTTONS */

@@ -1,0 +1,10 @@
+/*
+I did not want the styles to be added to my table so removed it all
+*/
+.TF tr.fltrow {
+	margin: 0;
+}
+.TF tr.fltrow td{
+	height: 15px;
+	line-height: 15px;
+}
