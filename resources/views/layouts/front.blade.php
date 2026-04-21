@@ -58,7 +58,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="{{ asset('css/astar.css') }}" />
+  <link rel="stylesheet" href="{{ asset('css/astar.css') }}?v={{ filemtime(public_path('css/astar.css')) }}" />
   @yield('extra_styles')
 </head>
 <body>
@@ -144,6 +144,6 @@
   </div>
 </footer>
 
-<script src="{{ asset('js/astar.js') }}"></script>
+<script src="{{ asset('js/astar.js') }}?v={{ filemtime(public_path('js/astar.js')) }}"></script>
 </body>
 </html>
