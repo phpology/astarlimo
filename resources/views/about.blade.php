@@ -18,7 +18,6 @@
       <div class="two-col" style="margin-bottom:7rem">
         <div class="two-col-img reveal">
           <img src="{{ asset('images/about.png') }}" alt="A Star Limousine History" />
-          <div class="ring"></div>
         </div>
         <div class="two-col-text reveal reveal-delay-1">
           <h2>Family Run Since 1990</h2>
@@ -38,7 +37,6 @@
         </div>
         <div class="two-col-img reveal reveal-delay-1" style="order:2">
           <img src="{{ asset('images/luxury-3.png') }}" alt="Luxury interior detail" />
-          <div class="ring"></div>
         </div>
       </div>
     </div>
