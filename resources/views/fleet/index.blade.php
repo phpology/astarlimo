@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Our Fleet — A Star Limousine')
-@section('description', 'Explore our fleet of Luxury Cars, Horse Drawn Carriages, and Rickshaws for weddings and special events.')
-
 @section('content')
 
 <div class="page-wrap">
@@ -78,3 +75,44 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "Our Fleet", "item": "{{ url('/fleet') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "A Star Limousine Fleet",
+    "description": "Our fleet of luxury wedding transport vehicles available for hire in London and Middlesex.",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Luxury Cars",
+        "url": "{{ url('/fleet/luxury-cars') }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Horse Drawn Carriage",
+        "url": "{{ url('/fleet/horse-drawn-carriage') }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rickshaw",
+        "url": "{{ url('/fleet/rickshaw') }}"
+      }
+    ]
+  }
+]
+</script>
+@endpush

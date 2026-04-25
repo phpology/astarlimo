@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'About Us — A Star Limousine')
-@section('description', 'Learn about A Star Limousine, a family-run British luxury wedding transport business established in 1990 in Stanmore, Middlesex.')
-
 @section('content')
 
 <div class="page-wrap">
@@ -45,3 +42,27 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "About Us", "item": "{{ url('/about') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "{{ url('/about') }}",
+    "name": "About Us — A Star Limousine",
+    "description": "Learn about A Star Limousine, a family-run British luxury wedding transport business established in 1990 in Stanmore, Middlesex.",
+    "isPartOf": { "@id": "{{ url('/') }}#website" },
+    "about": { "@id": "{{ url('/') }}#business" }
+  }
+]
+</script>
+@endpush

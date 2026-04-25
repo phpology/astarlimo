@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Luxury Cars — A Star Limousine')
-@section('description', 'Vintage Rolls Royces, Bentley Flying Spur, Rolls Royce Phantom and more. Our luxury car fleet for weddings in London and Middlesex.')
-
 @section('content')
 
 <!-- PAGE HERO -->
@@ -87,3 +84,43 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "Our Fleet", "item": "{{ url('/fleet') }}" },
+      { "@type": "ListItem", "position": 3, "name": "Luxury Cars", "item": "{{ url('/fleet/luxury-cars') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Luxury Wedding Car Hire",
+    "description": "Hire a Vintage Rolls Royce, Bentley or Phantom for your wedding. Luxury wedding car hire across London and Middlesex. Call us to check availability.",
+    "url": "{{ url('/fleet/luxury-cars') }}",
+    "provider": { "@id": "{{ url('/') }}#business" },
+    "areaServed": [
+      { "@type": "City", "name": "London" },
+      { "@type": "AdministrativeArea", "name": "Middlesex" }
+    ],
+    "serviceType": "Wedding Car Hire",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Luxury Cars",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Vintage Rolls Royce Silver Spirit" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Rolls Royce Phantom" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Classic Silver Shadow" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Bentley Flying Spur" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Bentley Mulsanne" } }
+      ]
+    }
+  }
+]
+</script>
+@endpush

@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Rickshaw / Tuk Tuk — A Star Limousine')
-@section('description', 'A unique and show-stopping way to arrive at your wedding. Our beautifully decorated rickshaw is unlike anything else.')
-
 @section('content')
 
 <!-- PAGE HERO -->
@@ -85,3 +82,32 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "Our Fleet", "item": "{{ url('/fleet') }}" },
+      { "@type": "ListItem", "position": 3, "name": "Rickshaw", "item": "{{ url('/fleet/rickshaw') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Wedding Rickshaw Hire",
+    "description": "Wedding rickshaw and tuk tuk hire in London and Middlesex. Perfect for Asian weddings — a beautiful, show-stopping entrance your guests will never forget.",
+    "url": "{{ url('/fleet/rickshaw') }}",
+    "provider": { "@id": "{{ url('/') }}#business" },
+    "areaServed": [
+      { "@type": "City", "name": "London" },
+      { "@type": "AdministrativeArea", "name": "Middlesex" }
+    ],
+    "serviceType": "Rickshaw Hire"
+  }
+]
+</script>
+@endpush

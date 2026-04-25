@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Terms of Service — A Star Limousine')
-@section('description', 'Terms of Service for A Star Limousine luxury wedding transport.')
-
 @section('content')
 
 <div class="page-wrap">

@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Horse Drawn Carriage — A Star Limousine')
-@section('description', 'Arrive at your wedding like Cinderella in a beautifully decorated horse-drawn carriage. A truly fairy tale arrival.')
-
 @section('content')
 
 <!-- PAGE HERO -->
@@ -85,3 +82,32 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "Our Fleet", "item": "{{ url('/fleet') }}" },
+      { "@type": "ListItem", "position": 3, "name": "Horse Drawn Carriage", "item": "{{ url('/fleet/horse-drawn-carriage') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Horse Drawn Carriage Wedding Hire",
+    "description": "Horse drawn carriage hire for weddings in London and Middlesex. Arrive in fairy tale style — beautifully decorated and truly unforgettable. Get in touch.",
+    "url": "{{ url('/fleet/horse-drawn-carriage') }}",
+    "provider": { "@id": "{{ url('/') }}#business" },
+    "areaServed": [
+      { "@type": "City", "name": "London" },
+      { "@type": "AdministrativeArea", "name": "Middlesex" }
+    ],
+    "serviceType": "Horse Drawn Carriage Hire"
+  }
+]
+</script>
+@endpush

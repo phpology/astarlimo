@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'A Star Limousine — Luxury Wedding Transport Since 1990')
-@section('description', 'Family-run British luxury wedding transport since 1990. Vintage Rolls Royces, Horse Drawn Carriages, and Rickshaws. Based in Stanmore, Middlesex.')
-
 @section('content')
 
 <!-- HERO -->
@@ -99,3 +96,15 @@
 </section>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ url('/') }}#website",
+  "name": "A Star Limousine",
+  "url": "{{ url('/') }}"
+}
+</script>
+@endpush

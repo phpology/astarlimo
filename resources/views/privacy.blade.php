@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Privacy Policy — A Star Limousine')
-@section('description', 'Privacy Policy for A Star Limousine luxury wedding transport. How we handle your personal data.')
-
 @section('content')
 
 <div class="page-wrap">

@@ -696,6 +696,9 @@ footer p { color: var(--muted); font-size: .88rem; max-width: 28rem; }
 .footer-bottom-links { display: flex; gap: 1.5rem; }
 .footer-bottom-links a { color: var(--muted); transition: color .2s; }
 .footer-bottom-links a:hover { color: var(--gold); }
+.footer-social { display: flex; gap: 1rem; margin-top: 1.25rem; }
+.footer-social a { color: var(--muted); transition: color .2s; line-height: 0; }
+.footer-social a:hover { color: var(--gold); }
 
 /* === LEGAL PAGES === */
 .legal-body { max-width: 52rem; margin: 0 auto; }
