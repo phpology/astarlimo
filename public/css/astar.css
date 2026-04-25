@@ -134,6 +134,31 @@ ul { list-style: none; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
+
+/* === TOPBAR === */
+.topbar { background: var(--fg); border-bottom: 1px solid rgba(255,255,255,.07); }
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.75rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.topbar-contact {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  color: rgba(255,255,255,.4);
+}
+.topbar-contact svg { flex-shrink: 0; color: var(--gold); }
+.topbar-contact a { color: rgba(255,255,255,.78); font-size: .72rem; letter-spacing: .04em; transition: color .2s; }
+.topbar-contact a:hover { color: var(--gold); }
+.topbar-sep { color: rgba(255,255,255,.2); font-size: .6rem; }
+.topbar-actions { display: flex; align-items: center; gap: .6rem; }
+.topbar .btn-whatsapp,
+.topbar .btn-book { height: 1.85rem; padding: 0 .9rem; font-size: .63rem; }
 .nav-inner {
   display: flex;
   align-items: center;
@@ -193,18 +218,23 @@ ul { list-style: none; }
 .nav-mobile a:hover { color: var(--silver); }
 .nav-mobile .btn-whatsapp,
 .nav-mobile .btn-gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 3rem;
   font-size: .8rem;
-  justify-content: center;
 }
+.nav-mobile .btn-gold { color: #fff; }
 @media (max-width: 900px) {
+  .topbar { display: none; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
+  .page-wrap { padding-top: 5rem; }
 }
 
-/* page content offset for fixed nav */
-.page-wrap { padding-top: 5rem; }
+/* page content offset for fixed nav + topbar */
+.page-wrap { padding-top: 7.75rem; }
 
 /* === HERO === */
 .hero {
