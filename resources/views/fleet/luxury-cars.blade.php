@@ -4,7 +4,7 @@
 
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <img src="{{ asset('images/luxury-hero.png') }}" alt="Luxury Wedding Cars" />
+  <img src="{{ asset('images/gdv01-hero.jpg') }}" alt="Luxury Wedding Cars" />
   <div class="page-hero-overlay"></div>
   <div class="page-hero-content">
     <p class="page-hero-eyebrow">Our Fleet</p>

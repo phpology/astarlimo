@@ -18,7 +18,7 @@
   <!-- Fleet Panels -->
   <div class="fleet-panel reveal">
     <div class="fleet-panel-img">
-      <img src="{{ asset('images/luxury-hero.png') }}" alt="Luxury Wedding Cars" />
+      <img src="{{ asset('images/gdv01-hero.jpg') }}" alt="Luxury Wedding Cars" />
       <div class="fleet-panel-img-overlay"></div>
     </div>
     <div class="fleet-panel-body">
@@ -48,7 +48,7 @@
 
   <div class="fleet-panel reveal">
     <div class="fleet-panel-img">
-      <img src="{{ asset('images/rickshaw-hero.png') }}" alt="Wedding Rickshaw" />
+      <img src="{{ asset('images/rickshaw01-hero.jpg') }}" alt="Wedding Rickshaw" />
       <div class="fleet-panel-img-overlay"></div>
     </div>
     <div class="fleet-panel-body">
@@ -56,7 +56,7 @@
         <p class="eyebrow">Travel In Style — Uniquely</p>
         <h2>Rickshaw</h2>
         <p>A show-stopping, wonderfully unique way to arrive at your celebration. Beautifully decorated and impossible to forget.</p>
-        <a href="{{ route('fleet.rickshaw') }}" class="btn btn-outline">View Collection &rarr;</a>
+        <a href="{{ route('contact') }}" class="btn btn-outline">Get In Touch &rarr;</a>
       </div>
     </div>
   </div>
