@@ -1,8 +1,5 @@
 @extends('layouts.front')
 
-@section('title', 'Our Fleet — A Star Limousine')
-@section('description', 'Explore our fleet of Luxury Cars, Horse Drawn Carriages, and Rickshaws for weddings and special events.')
-
 @section('content')
 
 <div class="page-wrap">
@@ -21,7 +18,7 @@
   <!-- Fleet Panels -->
   <div class="fleet-panel reveal">
     <div class="fleet-panel-img">
-      <img src="{{ asset('images/luxury-hero.png') }}" alt="Luxury Wedding Cars" />
+      <img src="{{ asset('images/gdv01-hero.jpg') }}" alt="Luxury Wedding Cars" />
       <div class="fleet-panel-img-overlay"></div>
     </div>
     <div class="fleet-panel-body">
@@ -51,7 +48,7 @@
 
   <div class="fleet-panel reveal">
     <div class="fleet-panel-img">
-      <img src="{{ asset('images/rickshaw-hero.png') }}" alt="Wedding Rickshaw" />
+      <img src="{{ asset('images/rickshaw01-hero.jpg') }}" alt="Wedding Rickshaw" />
       <div class="fleet-panel-img-overlay"></div>
     </div>
     <div class="fleet-panel-body">
@@ -59,7 +56,7 @@
         <p class="eyebrow">Travel In Style — Uniquely</p>
         <h2>Rickshaw</h2>
         <p>A show-stopping, wonderfully unique way to arrive at your celebration. Beautifully decorated and impossible to forget.</p>
-        <a href="{{ route('fleet.rickshaw') }}" class="btn btn-outline">View Collection &rarr;</a>
+        <a href="{{ route('contact') }}" class="btn btn-outline">Get In Touch &rarr;</a>
       </div>
     </div>
   </div>
@@ -78,3 +75,44 @@
 </div>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ url('/') }}" },
+      { "@type": "ListItem", "position": 2, "name": "Our Fleet", "item": "{{ url('/fleet') }}" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "A Star Limousine Fleet",
+    "description": "Our fleet of luxury wedding transport vehicles available for hire in London and Middlesex.",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Luxury Cars",
+        "url": "{{ url('/fleet/luxury-cars') }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Horse Drawn Carriage",
+        "url": "{{ url('/fleet/horse-drawn-carriage') }}"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rickshaw",
+        "url": "{{ url('/fleet/rickshaw') }}"
+      }
+    ]
+  }
+]
+</script>
+@endpush

@@ -10,8 +10,8 @@ class FrontendController extends Controller
     {
         return view('home', [
             'og' => [
-                'title'       => 'A Star Limousine — Luxury Wedding Transport Since 1990',
-                'description' => 'Family-run British luxury wedding transport since 1990. Vintage Rolls Royces, Horse Drawn Carriages, and Rickshaws. Based in Stanmore, Middlesex.',
+                'title'       => 'Wedding Car Hire London | A Star Limousine',
+                'description' => 'Luxury wedding car hire across London and Middlesex. Rolls Royces, horse drawn carriages and rickshaws. Family-run since 1990. Contact us for a quote.',
                 'image'       => asset('images/hero.png'),
                 'url'         => url('/'),
                 'type'        => 'website',
@@ -23,8 +23,8 @@ class FrontendController extends Controller
     {
         return view('about', [
             'og' => [
-                'title'       => 'About Us — A Star Limousine',
-                'description' => 'Learn about A Star Limousine, a family-run British luxury wedding transport business established in 1990 in Stanmore, Middlesex.',
+                'title'       => 'About A Star Limousine | Family Wedding Transport Since 1990',
+                'description' => 'A Star Limousine has provided luxury wedding car hire in London and Middlesex since 1990. A family-run business built on personal service and trust.',
                 'image'       => asset('images/about.png'),
                 'url'         => url('/about'),
                 'type'        => 'website',
@@ -36,8 +36,8 @@ class FrontendController extends Controller
     {
         return view('fleet.index', [
             'og' => [
-                'title'       => 'Our Fleet — A Star Limousine',
-                'description' => 'Explore our fleet of Luxury Cars, Horse Drawn Carriages, and Rickshaws for weddings and special events.',
+                'title'       => 'Wedding Transport Fleet | Luxury Cars, Carriages & Rickshaws',
+                'description' => 'Explore our wedding transport fleet — luxury cars, horse drawn carriages and rickshaws, available for hire across London and Middlesex. Enquire today.',
                 'image'       => asset('images/luxury-hero.png'),
                 'url'         => url('/fleet'),
                 'type'        => 'website',
@@ -49,8 +49,8 @@ class FrontendController extends Controller
     {
         return view('fleet.luxury-cars', [
             'og' => [
-                'title'       => 'Luxury Cars — A Star Limousine',
-                'description' => 'Vintage Rolls Royces, Bentley Flying Spur, Rolls Royce Phantom and more. Our luxury car fleet for weddings in London and Middlesex.',
+                'title'       => 'Luxury Wedding Car Hire London | Rolls Royce & Bentley',
+                'description' => 'Hire a Vintage Rolls Royce, Bentley or Phantom for your wedding. Luxury wedding car hire across London and Middlesex. Call us to check availability.',
                 'image'       => asset('images/luxury-hero.png'),
                 'url'         => url('/fleet/luxury-cars'),
                 'type'        => 'website',
@@ -62,8 +62,8 @@ class FrontendController extends Controller
     {
         return view('fleet.horse-drawn-carriage', [
             'og' => [
-                'title'       => 'Horse Drawn Carriage — A Star Limousine',
-                'description' => 'Arrive at your wedding like Cinderella in a beautifully decorated horse-drawn carriage. A truly fairy tale arrival.',
+                'title'       => 'Horse Drawn Carriage Hire for Weddings | London & Middlesex',
+                'description' => 'Horse drawn carriage hire for weddings in London and Middlesex. Arrive in fairy tale style — beautifully decorated and truly unforgettable. Get in touch.',
                 'image'       => asset('images/horse-carriage-hero.png'),
                 'url'         => url('/fleet/horse-drawn-carriage'),
                 'type'        => 'website',
@@ -75,8 +75,8 @@ class FrontendController extends Controller
     {
         return view('fleet.rickshaw', [
             'og' => [
-                'title'       => 'Rickshaw / Tuk Tuk — A Star Limousine',
-                'description' => 'A unique and show-stopping way to arrive at your wedding. Our beautifully decorated rickshaw is unlike anything else.',
+                'title'       => 'Wedding Rickshaw & Tuk Tuk Hire London | A Star Limousine',
+                'description' => 'Wedding rickshaw and tuk tuk hire in London and Middlesex. Perfect for Asian weddings — a beautiful, show-stopping entrance your guests will never forget.',
                 'image'       => asset('images/rickshaw-hero.png'),
                 'url'         => url('/fleet/rickshaw'),
                 'type'        => 'website',
@@ -88,8 +88,8 @@ class FrontendController extends Controller
     {
         return view('contact', [
             'og' => [
-                'title'       => 'Contact — A Star Limousine',
-                'description' => 'Contact A Star Limousine to enquire about our luxury wedding transport. Call, email, or send us a message.',
+                'title'       => 'Book Wedding Transport | Contact A Star Limousine',
+                'description' => 'Get in touch to book your wedding transport. Call, WhatsApp or email A Star Limousine — trusted luxury wedding car hire in London and Middlesex since 1990.',
                 'image'       => asset('images/luxury-1.png'),
                 'url'         => url('/contact'),
                 'type'        => 'website',
@@ -143,15 +143,15 @@ class FrontendController extends Controller
     public function sitemap()
     {
         $pages = [
-            ['url' => url('/'),                           'priority' => '1.0', 'changefreq' => 'weekly'],
-            ['url' => url('/about'),                      'priority' => '0.8', 'changefreq' => 'monthly'],
-            ['url' => url('/fleet'),                      'priority' => '0.9', 'changefreq' => 'monthly'],
-            ['url' => url('/fleet/luxury-cars'),          'priority' => '0.8', 'changefreq' => 'monthly'],
-            ['url' => url('/fleet/horse-drawn-carriage'), 'priority' => '0.8', 'changefreq' => 'monthly'],
-            ['url' => url('/fleet/rickshaw'),             'priority' => '0.8', 'changefreq' => 'monthly'],
-            ['url' => url('/contact'),                    'priority' => '0.7', 'changefreq' => 'monthly'],
-            ['url' => url('/privacy'),                    'priority' => '0.3', 'changefreq' => 'yearly'],
-            ['url' => url('/terms'),                      'priority' => '0.3', 'changefreq' => 'yearly'],
+            ['url' => url('/'),                           'lastmod' => '2026-04-25', 'priority' => '1.0', 'changefreq' => 'weekly'],
+            ['url' => url('/about'),                      'lastmod' => '2026-04-25', 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['url' => url('/fleet'),                      'lastmod' => '2026-04-25', 'priority' => '0.9', 'changefreq' => 'monthly'],
+            ['url' => url('/fleet/luxury-cars'),          'lastmod' => '2026-04-25', 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['url' => url('/fleet/horse-drawn-carriage'), 'lastmod' => '2026-04-25', 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['url' => url('/fleet/rickshaw'),             'lastmod' => '2026-04-25', 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['url' => url('/contact'),                    'lastmod' => '2026-04-25', 'priority' => '0.7', 'changefreq' => 'monthly'],
+            ['url' => url('/privacy'),                    'lastmod' => '2026-04-25', 'priority' => '0.3', 'changefreq' => 'yearly'],
+            ['url' => url('/terms'),                      'lastmod' => '2026-04-25', 'priority' => '0.3', 'changefreq' => 'yearly'],
         ];
 
         return response()

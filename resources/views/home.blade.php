@@ -1,15 +1,11 @@
 @extends('layouts.front')
 
-@section('title', 'A Star Limousine — Luxury Wedding Transport Since 1990')
-@section('description', 'Family-run British luxury wedding transport since 1990. Vintage Rolls Royces, Horse Drawn Carriages, and Rickshaws. Based in Stanmore, Middlesex.')
-
 @section('content')
 
 <!-- HERO -->
 <section class="hero">
   <img src="{{ asset('images/hero.png') }}" alt="Vintage Rolls Royce waiting outside luxury estate" class="hero-img" />
   <div class="hero-overlay"></div>
-  <div class="hero-gradient"></div>
   <div class="hero-content">
     <p class="hero-tagline">"The Personal Touch"</p>
     <h1 class="hero-h1">Unforgettable Journeys for<br>Your Perfect Day.</h1>
@@ -65,6 +61,10 @@
 <!-- ABOUT SECTION -->
 <section class="section section-card">
   <div class="container">
+    <div class="page-intro reveal" style="margin-bottom:4rem">
+      <p class="eyebrow">Established 1990</p>
+      <h2 style="font-family:var(--serif);font-size:clamp(2rem,4vw,3rem)">Trusted by Generations.</h2>
+    </div>
     <div class="home-about">
       <div class="home-about-img reveal">
         <div class="aspect">
@@ -76,8 +76,6 @@
         </div>
       </div>
       <div class="reveal reveal-delay-1">
-        <p class="eyebrow" style="color:var(--gold);font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;margin-bottom:1rem">Established 1990</p>
-        <h2 style="font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);margin-bottom:1.5rem">Trusted by Generations.</h2>
         <p style="color:var(--muted);font-size:1.05rem;margin-bottom:1rem">A Star Limousine is a family-run business based in Stanmore, Middlesex. For over three decades, we have provided an uncompromised level of luxury and reliability for weddings and special events.</p>
         <p style="color:var(--muted);font-size:1.05rem">We understand the complications in arranging weddings. Our experienced staff are here to advise you on the best vehicle for your needs, ensuring your journey is seamless, comfortable, and memorable.</p>
         <a href="{{ route('about') }}" class="btn btn-outline" style="margin-top:2rem">Discover Our Story</a>
@@ -98,3 +96,15 @@
 </section>
 
 @endsection
+
+@push('schema')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ url('/') }}#website",
+  "name": "A Star Limousine",
+  "url": "{{ url('/') }}"
+}
+</script>
+@endpush
